@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Whisper&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: url(/asset/img/page-bg.jpg);
+    background-size: contain;
+    background-size: auto;
+    zoom: 1;
+    z-index: -2;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+input {
+    outline: none;
+    border: transparent;
+    background: transparent;
+}
+
+.outline-none {
+    outline: none;
+}
+
+.shadow-none {
+    box-shadow: none;
+}
+
+ul,
+h1,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    height: auto;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* height: 5rem; */
+    background: white;
+    z-index: 4;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background: rgba(31, 23, 33, 1);
+}
+
+header {
+    background: #fff;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.headerLogo img {
+    width: 70px;
+}
+
+.dropdown-toggle::after {
+    border: none !important;
+    font: normal normal normal 14px / 1 FontAwesome;
+    content: "" !important;
+    color: #84c225;
+    vertical-align: 0;
+}
+
+.dropdown-toggle:not(.show)::after {
+    content: "" !important;
+}
+
+.headerLogo span {
+    font-size: 1.5rem;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    color: #26253c;
+}
+
+
+.headerSetting a,
+.drop-downs a,
+.laguage a {
+    font-size: 1.3rem;
+    font-family: Montserrat, sans-serif;
+    color: #262a3c;
+    font-weight: 500;
+}
+
+.refresh,
+.tourDown {
+    transform: rotateZ(-180deg) scaleX(1.4) translate(2px, -2px);
+}
+
+.tourList {
+    padding: 20px 40px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.show,
+.shows {
+    display: block;
+}
+
+.nav-link{
+    font-size: 24px;
+    color: #262a3c;
+}
+
+.tourList li {
+    margin-top: 15px;
+    font-size: 22px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.tourList li a:hover{
+    font-weight: 600;
+    color: #84c225;
+}
+
+.tourList li a{
+    color: #262a3c;
+}
+
+
+.headerIconsGroup .icons img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+.headerIconsGroup .menuBars i {
+    font-size: 34px;
+    cursor: pointer;
+}
+
+
+.innerPart {
+    width: 25rem;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.InnerCloseLi,
+.InnerCloseLe {
+    width: 30px;
+    height: 2px;
+    background: #26253c;
+    position: absolute;
+    right: 30px;
+    top: 45px;
+}
+
+.InnerCloseLi {
+    transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px);
+}
+
+.InnerCloseLe {
+    transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px);
+}
+
+.adressPhone h4,
+.adressPhone a {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #262a3c;
+}
+
+.buttonOrange {
+    background: #e77817;
+}
+
+.buttonOrange p,
+.buttonOrangeTwo p {
+    font-size: 20px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    color: #fff;
+    backdrop-filter: blur(2px);
+    cursor: pointer;
+}
+
+.round {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.buttonOrange:hover .round,
+.buttonOrangeTwo:hover .round {
+    background: #fff;
+}
+
+.swiper {
+    width: 100%;
+    height: 50%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 42.5rem;
+    object-fit: cover;
+}
+
+.swiperText {
+    width: 56%;
+    top: 50%;
+}
+
+.swiperText h1 {
+    font-size: 5.625rem;
+    margin-bottom: 1.875rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.swiperText p:nth-child(2) {
+    font-size: 2.2rem;
+    color: #fff;
+    margin-bottom: 4.375rem;
+}
+
+.swiperText button p {
+    font-size: 22px;
+}
+
+.buttonOrangeTwo {
+    padding: 20px 30px;
+    background: #e77817;
+}
+
+.laguage a {
+    cursor: pointer;
+}
+
+.laguage img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.swiperFeel h1 {
+    font-size: 7rem;
+    font-family: Italianno, sans-serif;
+    color: #990000;
+    margin-right: .7rem;
+}
+
+.feelAdris h6,
+.feelAdris h3 {
+    color: #990000;
+}
+
+.feelAdris h6 {
+    font-size: 14px;
+}
+
+.popularHeader h1 {
+    color: #26253C;
+}
+
+.popularImg {
+    height: 370px;
+}
+
+.popularImg img {
+    height: 270px;
+}
+
+.hotTour {
+    background: #e77817;
+}
+
+.hotTour img {
+    width: 25px;
+    height: 25px;
+}
+
+.popularFooter h3:hover,
+.cardItem li:hover {
+    color: #84c225;
+    cursor: pointer;
+}
+
+.tariffPopularImg{
+    cursor: pointer;
+}
+
+.tariffPopularImg:hover h3{
+    color: #84c225;
+}
+
+.cardItem li {
+    color: #84828b;
+}
+
+.cardItem span {
+    width: 2px;
+    height: 12px;
+    background: #84828b;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.popularPrice {
+    border: 1px solid #e77817;
+    color: #e77817;
+}
+
+.popularPrice h5 {
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.popularPrice h5 span {
+    font-size: 1.3rem;
+}
+
+.popularImgfooter {
+    bottom: 6rem;
+}
+
+.popularImgfooter ul {
+    margin-left: -.4rem;
+    background: #26253c;
+    border: 1px solid #26253c;
+    font-size: .8rem;
+    white-space: nowrap;
+}
+
+.popularFooter h3 {
+    color: #262A3C;
+}
+
+.popularImgfooter li:nth-child(1)::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 12px;
+    background: #fff;
+    transform: translateX(1.25rem);
+    top: 0;
+    bottom: 0;
+    margin: auto 1.5rem;
+}
+
+.slidePrev-btn,
+.slideNext-btn {
+    position: absolute;
+    bottom: 50%;
+    top: initial !important;
+    z-index: 20;
+}
+
+.slideNext-btn {
+    right: 0;
+}
+
+.slidePrev-btn i,
+.slideNext-btn i {
+    font-size: 25px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.discoverImage img,
+.rgbDiscoverImg img,
+.rgbDiscover img {
+    cursor: pointer;
+}
+
+.discoverImage img {
+    width: 500px;
+    height: 252px;
+}
+
+.rgbDiscoverImg img {
+    width: 500px;
+    height: 350px;
+}
+
+.descoverText p {
+    color: #26253C;
+    font-size: 1.375rem;
+}
+
+.discoverImage h4,
+.descoverFooter h4 {
+    color: rgb(38, 37, 60);
+}
+
+#topTours .accordion-button::after {
+    flex-shrink: 0;
+    width: var(--bs-accordion-btn-icon-width);
+    height: var(--bs-accordion-btn-icon-width);
+    margin-left: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: var(--bs-accordion-btn-icon-width);
+    transition: var(--bs-accordion-btn-icon-transition);
+    display: none;
+}
+
+
+.contact-box {
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 30% 70%;
+}
+
+.contactimg img {
+    /* width: 50px; */
+    height: 60px;
+}
+
+.contactImage h1 {
+    font-size: 44px;
+    font-family: Montserrat, sans-serif;
+    color: #e77817;
+}
+
+.contactFormText h4,
+.contactFormText h5 {
+    color: #26253C;
+}
+
+.contactInputGroup input,
+.contactInputGroup textarea {
+    border: 1px solid #84828b;
+    font-size: 20px;
+}
+
+.inputModal p {
+    color: #26253C;
+}
+
+.inputModal .external {
+    cursor: pointer;
+    color: #990000;
+}
+
+.font-size {
+    font-size: 22px;
+}
+
+
+
+.footerTravel .accordion-button::after {
+    background-image: initial !important;
+}
+
+.footerTravel button[aria-expanded="true"] i {
+    transform: rotate(-180deg);
+}
+
+.topTourMenu li {
+    font-family: Montserrat, sans-serif;
+    color: #26253c;
+    line-height: 4.375rem;
+}
+
+
+.topPopularImg .topPopularImage {
+    width: 315px;
+    height: 215px;
+}
+
+.topTourMenu li.actives {
+    color: #990000;
+    border-bottom: 2px solid #990000;
+}
+
+.topTourSur p {
+    font-size: 18px;
+    color: rgb(38, 37, 60);
+    font-weight: 400;
+}
+
+.topTourRight li {
+    font-size: 18px;
+    color: rgb(38, 37, 60);
+    white-space: nowrap;
+}
+
+.topTourRight button:hover li {
+    color: #84c225;
+}
+
+.tripsBusget {
+    cursor: pointer;
+}
+
+.tripsBusget img {
+    transition: .4s;
+}
+
+.tripsBusget h4 {
+    color: #262A3C;
+}
+
+.tripsBusget:hover h4 {
+    color: #990000;
+}
+
+.tripsColor {
+    display: none;
+}
+
+.tripsBusget:hover img:nth-child(1) {
+    display: none;
+}
+
+.tripsBusget:hover .tripsColor {
+    display: block;
+}
+
+.adressIcons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.locationLozard img {
+    width: 415px;
+    margin-top: -6px;
+}
+
+.colors {
+    font-size: 18px;
+    color: #262A3C;
+}
+
+.colors:hover {
+    color: #84c255;
+    font-weight: 500;
+}
+
+
+.tariffPopularImg {
+    width: 25rem;
+}
+
+
+.footerReserved p {
+    font-size: 18px;
+    color: #84828b;
+    cursor: context-menu;
+}
+
+.footerColapsed i {
+    color: #84c225;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.footerReserved {
+    width: 60%;
+}
+
+@media screen and (min-width: 1400px) {
+
+    .navbar,
+    .swiperFeelTheOrian,
+    #popular,
+    #discover,
+    #topTours,
+    #tripsThemes,
+    #contacts,
+    .footerTravel {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .discoverImage img {
+        width: 400px;
+        height: 252px;
+    }
+
+    .rgbDiscoverImg img {
+        width: 400px;
+        height: 350px;
+    }
+
+    .contact-box {
+        column-gap: 0;
+        row-gap: 30px;
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .discoverImage img {
+        width: 350px;
+        height: 200px;
+    }
+
+    .rgbDiscoverImg img {
+        width: 350px;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .topTourMenu ul {
+        width: 75%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .headerMenu {
+        width: 90%;
+    }
+
+    .tripsBusget h4 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .swiperText {
+        width: 90%;
+    }
+
+    .swiperText h1 {
+        font-size: 4.375rem;
+    }
+
+    .discoverImage img {
+        width: 300px;
+        height: 180px;
+    }
+
+    .rgbDiscoverImg img {
+        width: 300px;
+        height: 250px;
+    }
+
+    .descoverText p {
+        font-size: 1rem;
+    }
+
+    .locationLozard iframe {
+        width: 465px;
+        height: 315px;
+    }
+
+    .footerReserved {
+        width: 100%;
+    }
+
+    .contactImage h1 {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .headerGroup {
+        width: 100%;
+    }
+
+    .headerMenu {
+        display: none;
+    }
+
+    .swiperText p:nth-child(2) {
+        font-size: 28px;
+    }
+
+    .rgbDiscoverImg img {
+        height: 350px;
+    }
+
+    .descoverFooterRight {
+        width: 60%;
+    }
+    .contactFormText h4{
+        font-size: 20px;
+    }
+
+    .contactFormText h5{
+        font-size: 18px;
+    }
+
+    .tourList {
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .swiperText h1 {
+        font-size: 3.125rem;
+    }
+
+    .swiperText {
+        width: 95%;
+    }
+
+    .descoverFooterRight {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .headerIconsGroup {
+        width: 100%;
+        height: 70px;
+    }
+
+    .innerPart {
+        width: 100%;
+    }
+
+    .swiperText h1 {
+        font-size: 2.5rem;
+    }
+
+    .swiperText p:nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+    .swiperFeel h1 {
+        font-size: 6rem;
+    }
+
+    .popularPrice h5 {
+        font-size: 1rem;
+    }
+
+    .popularPrice span {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .swiperFeel h1 {
+        font-size: 4rem;
+    }
+
+    .popularImg {
+        height: 400px;
+    }
+
+    .popularImgfooter {
+        bottom: 8rem;
+    }
+
+    .rgbDiscoverImg img {
+        height: 300px;
+    }
+
+    .topTourSur p {
+        font-size: 16px;
+    }
+
+    .tariffPopularImg {
+        width: 15rem;
+    }
+}
